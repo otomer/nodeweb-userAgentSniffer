@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User-Agent Sniffer</title>
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="useragent, ua, parse,user-agent,browser,device" />
+
+    <!-- Styles -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-2Z7/vC4qa8c+Ie2wHTTl23UC/WUQvArGcavaBvCBwEfbQFA/NiQ7jp30yzfsa5+p"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" media="all" />
+    <link rel="icon" href="/favicon.ico">
+</head>
+
+<body>
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js "></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js "></script>
+<![endif]-->
+
+    <!-- ******************** -->
+    <!-- Header -->
+    <!-- ******************** -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+        <div class="form-group" style="display:inline;width:100%;margin-bottom:0">
+            <div class="input-group">
+                <input type="text" class="form-control search" placeholder="Put your User-Agent here">
+                <span class="input-group-btn">
+                    <button id="btnSearch" class="btn btn-primary" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <button id="btnClear" class="btn btn-primary" type="submit">
+                        <i class="fa fa-undo"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div id='header_holder'>
+            <div id='header'>
+                <div id='blue'></div>
+                <div id='pink'></div>
+                <div id='green'></div>
+                <div id='orange'></div>
+                <div id='blue2'></div>
+                <div id='purple2'></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ******************** -->
+    <!-- Results -->
+    <!-- ******************** -->
+    <div class="container">
+        <div class="card mb-3" id="result">
+
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="browserName"></div>
+                </li>
+                <li class="list-group-item">
+                    <div class="browserMajorVersion"></div>
+                </li>
+                <li class="list-group-item">
+                    <div class="browserVersion"></div>
+                </li>
+                <li class="list-group-item">
+                    <div class="osName"></div>
+                </li>
+                <li class="list-group-item">
+                    <div class="osVersion"></div>
+                </li>
+                <li class="list-group-item">
+                    <div class="deviceName"></div>
+                </li>
+                <li class="list-group-item">
+                    <div class="deviceType"></div>
+                </li>
+                <li class="list-group-item">
+                    <div class="deviceModel"></div>
+                </li>
+                <li class="list-group-item">
+                    <div class="engineName"></div>
+                </li>
+                <li class="list-group-item">
+                    <div class="engineVersion"></div>
+                </li>
+                <li class="list-group-item">
+                    <div class="cpuArchitecture"></div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Loader -->
+        <div class="loading" style="margin-top:100px;">
+            Loading...
+        </div>
+
+        <!-- No Results Container -->
+        <div id="noResult"></div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/parserApi.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

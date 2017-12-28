@@ -1,0 +1,26 @@
+.fill {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+  
+.fill .form-control {
+  width: 100%;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+ 
+.fill .rbtn {
+  white-space:nowrap;
+  width:1%;
+  display: table-cell;
+}
+
+#resetUaButton {
+  margin:0 5px;
+}
+
+body {
+  padding-top:100px;
+}
