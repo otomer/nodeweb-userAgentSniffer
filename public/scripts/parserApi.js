@@ -2,8 +2,9 @@ var ParserApi = {
     search: function (q) {
         return $.ajax({
             type: "POST",
-            url: 'http://localhost:8090/ua/parse',
+            url: 'https://uasniffer.herokuapp.com:39446/ua/parse',
             data: { ua: q }
         });
     }
 }
+
