@@ -1,34 +1,34 @@
 const express = require('express');
 const app = express();
 var port = process.env.PORT || 8090;
-var domain = "localhost";
+var domain = "https://uasniffer.herokuapp.com";
 var router = express.Router();
 var parser = require('ua-parser-js');
 var bodyParser = require('body-parser');
 var dateFormat = require('dateformat');
 var chalk = require('chalk');
 
-var serverConfig;
-try {
-  serverConfig = require("./server.json");
-  if (serverConfig) {
-    console.log("Configuration Loaded");
-    console.log(serverConfig);
-  }
-  domain = serverConfig.domain || domain;
-  port = serverConfig.port || port;
-} catch (e) {
-  if (e instanceof Error && e.code === "MODULE_NOT_FOUND")
-    serverConfig = null;
-  else
-    throw e;
-}
+// var serverConfig;
+// try {
+//   serverConfig = require("./server.json");
+//   if (serverConfig) {
+//     console.log("Configuration Loaded");
+//     console.log(serverConfig);
+//   }
+//   domain = serverConfig.domain || domain;
+//   port = serverConfig.port || port;
+// } catch (e) {
+//   if (e instanceof Error && e.code === "MODULE_NOT_FOUND")
+//     serverConfig = null;
+//   else
+//     throw e;
+// }
 
 var serverInfo = {
   expressVersion: require('express/package').version,
   port: port,
   upTime: dateFormat(Date.now(), "dd/mm/yyyy H:MM:ss TT"),
-  message: `server is listening http://${domain}:${port}`,
+  message: `server is listening ${domain}:${port}`,
 }
 
 //Server applications supports
