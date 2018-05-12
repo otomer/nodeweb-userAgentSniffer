@@ -1,4 +1,4 @@
-# web-userAgentSniffer
+# nodeweb-userAgentSniffer
 The following tool lets you enter a user agent string and it will identifiy your browser, engine, OS, CPU, and device type/model using a third-party library named UAParser.js
 
 ## Examples
