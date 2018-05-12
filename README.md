@@ -4,11 +4,13 @@ The following tool lets you enter a user agent string and it will identifiy your
 ## Examples
 
 **Enter your user agent:**
-![UA](http://i.imgur.com/FwEfpWY.jpg)
+
+<img src="http://i.imgur.com/FwEfpWY.jpg" height="140">
 
 **Output:**
-![UA2](http://i.imgur.com/EyHBuud.jpg)
-   
+
+<img src="http://i.imgur.com/EyHBuud.jpg" height="340">
+
 ## Dependencies
 Using the following **NPM: [UAPArser.js](https://github.com/faisalman/ua-parser-js), tested on version: 0.7.17** 
 
